@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- 後にHTMLとなるHandlebarsを記述 -->
+  <!-- table[border="1"]>tr>td{\{\{name\}\}}+td{\{\{color\}\}} -->
+  <script type="text/x-handlebars-template" id="template">
+<table border="1">
+  {{#each majiRanger}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{color}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+  <script src="./src/handlebars-v4.0.10.js"></script>
+  <script src="./src/main.js"></script>
+</head>
+
+<body id="contents">
+</body>
+
+</html>
